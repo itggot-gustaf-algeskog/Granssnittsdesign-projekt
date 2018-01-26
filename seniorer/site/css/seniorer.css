@@ -5,9 +5,18 @@
     width: 1000px;
     height: 600px;
     margin: auto;
+    background-color: #189292;
 }
 
-@media only screen and (max-device-width: 667px) {
+header {
+    grid-column: span 8;
+    grid-row: span 2;
+    background-color: #00e4e4;
+}
+
+
+
+@media only screen and (max-device-width: 375px) {
 
     .container {
         height: 667px;
@@ -15,3 +24,14 @@
     }
 
 }
+
+@media only screen and (min-device-width: 650px) {
+
+    .container {
+        height: 375px;
+        width: 667px;
+    }
+}
+
+1d3a3a
+090d0d
