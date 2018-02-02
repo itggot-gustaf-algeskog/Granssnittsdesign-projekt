@@ -23,6 +23,18 @@ header {
     border-radius: 8px;
 }
 
+.train:active {
+    background-color: white;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.train:hover {
+    background-color: rgb(182, 178, 178);
+    color: white;
+    transition-duration: 0.4s;
+}
+
 @media only screen and (max-device-width: 375px) {
 
     .container {
