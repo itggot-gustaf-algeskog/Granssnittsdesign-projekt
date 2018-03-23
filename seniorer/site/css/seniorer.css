@@ -41,6 +41,17 @@ header {
     font-size: 32px;
     border-radius: 8px;
     transition-duration: 0.4s;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    height: 50px;
+}
+
+.menyknapp {
+    display: grid;
+    grid-column: 7/8;
+    grid-row: 2/3;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
 }
 
 .dropdown {
@@ -75,11 +86,55 @@ header {
     background-color: rgb(182, 178, 178);
 }
 
+.nyheter {
+    grid-column: 2/8;
+    grid-row: 5/12;
+    background-color: white;
+}
+
+.nyhetsrubrik {
+    grid-column: 4/6;
+    grid-row: 4/5;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
 @media only screen and (max-device-width: 375px) {
 
     .container {
         height: 667px;
         width: 375px;
+    }
+
+    .train {
+        font-size: 16px;
+        padding: 0px;
+    }
+
+    .dropbtn {
+        font-size: 16px;
+        padding: 0px;
+        height: 55.5px;
+    }
+
+    .dropdown {
+        grid-column: 7/9;
+    }
+
+    .menyknapp {
+        display: grid;
+        grid-column: 7/9;
+        grid-row: 2/8;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+    .dropdown-content a {
+        font-size: 16px;
     }
 
 }
